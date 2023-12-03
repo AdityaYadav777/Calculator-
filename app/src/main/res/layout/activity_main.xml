@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/myLayout"
+    android:layout_marginTop="100dp"
+    android:layout_height="130dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="50dp"
+
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/showResult"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/showResult"
+        android:textSize="30dp"
+        android:hint="00"
+android:singleLine="true"
+        android:editable="false"
+        android:textAlignment="viewEnd"
+        android:paddingRight="20dp"
+
+        android:id="@+id/getText"/>
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myLayout">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:layout_alignParentBottom="true"
+            android:columnCount="4">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/num1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape"
+                android:text="1"
+                android:textSize="26sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="2"
+                android:id="@+id/num2"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="3"
+                android:id="@+id/num3"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="C"
+                android:id="@+id/numClear"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="4"
+                android:id="@+id/num4"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="5"
+                android:id="@+id/num5"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="6"
+                android:id="@+id/num6"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="+"
+                android:id="@+id/numSum"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="7"
+                android:id="@+id/num7"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="8"
+                android:id="@+id/num8"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="9"
+                android:id="@+id/num9"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="-"
+                android:id="@+id/numSub"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="0"
+                android:id="@+id/num0"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="."
+                android:id="@+id/numDot"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="*"
+                android:id="@+id/numMul"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="/"
+                android:id="@+id/numDiv"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="log"
+                android:id="@+id/numLog"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="("
+                android:id="@+id/numBrac1"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text=")"
+                android:id="@+id/numBrac2"
+                android:textSize="26sp"
+                android:layout_margin="5dp"
+                android:layout_height="60dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:background="@drawable/shape"
+                android:text="="
+                android:id="@+id/numEqual"
+                android:textSize="26sp"
+
+                android:layout_margin="5dp"
+                android:layout_height="70dp"/>
+
+
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
